@@ -16,7 +16,7 @@ class _HomeState extends State<HomePage> {
 
   //Danh sách các trang
   final List<Widget> _pages = [
-    HomeContentPage(),
+    const HomeContentPage(),
     const PlayPage(),
     const MenuBookPage(),
     const UserAccountPage()
@@ -71,6 +71,8 @@ class _HomeState extends State<HomePage> {
 }
 
 class HomeContentPage extends StatelessWidget {
+  const HomeContentPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -81,7 +83,7 @@ class HomeContentPage extends StatelessWidget {
             children: [
               //Hi everyone
               Container(
-                padding: EdgeInsets.all(10),
+                padding: const EdgeInsets.all(10),
                 child: const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -134,7 +136,7 @@ class HomeContentPage extends StatelessWidget {
                             color: Colors.grey.withOpacity(0.3),
                             spreadRadius: 2, // Độ lan
                             blurRadius: 15, // Độ mờ
-                            offset: Offset(0, 5), // Vị trí
+                            offset: const Offset(0, 5), // Vị trí
                           ),
                         ],
                       ),
@@ -148,7 +150,7 @@ class HomeContentPage extends StatelessWidget {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Icon(Icons.play_circle_fill, color: Colors.orangeAccent, size: 100),
+                              const Icon(Icons.play_circle_fill, color: Colors.orangeAccent, size: 100),
                               Container(
                                 padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
                                 decoration: BoxDecoration(
@@ -179,7 +181,7 @@ class HomeContentPage extends StatelessWidget {
                             color: Colors.grey.withOpacity(0.3),
                             spreadRadius: 2, // Độ lan
                             blurRadius: 15, // Độ mờ
-                            offset: Offset(0, 5), // Vị trí
+                            offset: const Offset(0, 5), // Vị trí
                           ),
                         ],
                       ),
@@ -193,7 +195,7 @@ class HomeContentPage extends StatelessWidget {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Icon(Icons.play_circle_fill, color: Colors.orangeAccent, size: 100),
+                              const Icon(Icons.play_circle_fill, color: Colors.orangeAccent, size: 100),
                               Container(
                                 padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
                                 decoration: BoxDecoration(
@@ -284,7 +286,7 @@ class HomeContentPage extends StatelessWidget {
                       color: Colors.grey.withOpacity(0.3),
                       spreadRadius: 3, // Độ lan
                       blurRadius: 15, // Độ mờ
-                      offset: Offset(0, 5), // Vị trí
+                      offset: const Offset(0, 5), // Vị trí
                     ),
                   ],
                 ),
