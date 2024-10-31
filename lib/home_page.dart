@@ -12,7 +12,7 @@ class HomePage extends StatefulWidget {
 
 
 class _HomeState extends State<HomePage> {
-  int _currentIndex = 0;
+  int _currentIndex = 3;
 
   //Danh sách các trang
   final List<Widget> _pages = [
